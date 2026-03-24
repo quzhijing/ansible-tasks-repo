@@ -1,5 +1,5 @@
 cat > main.yml << 'EOF'
-- hosts: "{{ target_group }}"
+- hosts: all
   become: yes
 
   tasks:
