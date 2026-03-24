@@ -1,4 +1,3 @@
-cat > main.yml << 'EOF'
 - hosts: all
   become: yes
 
@@ -15,4 +14,3 @@ cat > main.yml << 'EOF'
     - name: Install common tools
       include_tasks: playbooks/common_tools.yml
       when: install_common | default(false)
-EOF
