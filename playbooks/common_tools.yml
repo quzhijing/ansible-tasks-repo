@@ -1,0 +1,12 @@
+cat > playbooks/common_tools.yml << 'EOF'
+- name: Install common tools
+  apt:
+    name:
+      - vim
+      - git
+      - curl
+      - wget
+      - net-tools
+      - htop
+    state: present
+EOF

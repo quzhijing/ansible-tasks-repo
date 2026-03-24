@@ -1,0 +1,9 @@
+cat > playbooks/update_system.yml << 'EOF'
+- name: Update apt cache
+  apt:
+    update_cache: yes
+
+- name: Upgrade system
+  apt:
+    upgrade: dist
+EOF
