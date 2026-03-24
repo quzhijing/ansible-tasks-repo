@@ -5,12 +5,12 @@
 
     - name: Update system
       include_tasks: playbooks/update_system.yml
-      when: update_system | default(false)
+      when: update_system | bool
 
     - name: Install minicom
       include_tasks: playbooks/install_minicom.yml
-      when: install_minicom | default(false)
+      when: install_minicom | bool
 
     - name: Install common tools
       include_tasks: playbooks/common_tools.yml
-      when: install_common | default(false)
+      when: install_common | bool
