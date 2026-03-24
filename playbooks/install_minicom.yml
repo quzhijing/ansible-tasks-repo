@@ -1,6 +1,4 @@
-cat > playbooks/install_minicom.yml << 'EOF'
 - name: Install minicom
   apt:
     name: minicom
     state: present
-EOF

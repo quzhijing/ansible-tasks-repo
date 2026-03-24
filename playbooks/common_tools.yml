@@ -1,4 +1,3 @@
-cat > playbooks/common_tools.yml << 'EOF'
 - name: Install common tools
   apt:
     name:
@@ -9,4 +8,3 @@ cat > playbooks/common_tools.yml << 'EOF'
       - net-tools
       - htop
     state: present
-EOF
